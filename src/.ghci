@@ -1,0 +1,82 @@
+
+{- -*- Mode: Haskell -*- -}
+
+-- -----------------------------------------------------------------------------
+--  Language                                                                    
+-- -----------------------------------------------------------------------------
+
+:set -XNamedFieldPuns
+:set -XRecordWildCards
+:set -XMultiParamTypeClasses
+:set -XFlexibleInstances
+:set -XOverlappingInstances
+:set -XFlexibleContexts
+:set -XTypeSynonymInstances
+:set -XScopedTypeVariables
+:set -XViewPatterns
+:set -XPatternGuards
+:set -XFunctionalDependencies
+:set -XUnicodeSyntax
+:set -XGeneralizedNewtypeDeriving
+:set -XUndecidableInstances
+:set -XRank2Types
+:set -XEmptyDataDecls
+:set -XForeignFunctionInterface
+:set -XNamedFieldPuns
+:set -XDeriveDataTypeable
+:set -XTemplateHaskell
+:set -XQuasiQuotes
+:set -XCPP
+:set -XNoImplicitPrelude
+
+-- :set -i/usr1/seanmcl/save/projects/atp/src
+-- :set -I/usr1/seanmcl/save/projects/atp/src
+
+-- :set -i/Users/sean/save/projects/atp/src
+-- :set -I/Users/sean/save/projects/atp/src
+
+-- -optL passes option to literate preprocessor
+-- -q allows comments next to code lines
+
+:set -optL -q
+
+-- This is needed to set breakpoints
+:set -fbyte-code
+
+:set stop list
+
+-- Be verbose
+-- :set -v
+
+-- For backtraces
+:set -fbreak-on-exception
+
+-- -----------------------------------------------------------------------------
+--  Options                                                                      
+-- -----------------------------------------------------------------------------
+
+:set +t
+
+-- It seems that the prompt must say "Prelude>" for emacs loading to work correctly.  
+-- :set prompt "> "
+:set prompt "Prelude> "
+
+:def sm (\_ -> return ":stepmodule")
+
+-- -----------------------------------------------------------------------------
+--  Tmp                                                                         
+-- -----------------------------------------------------------------------------
+
+-- :break testform
+-- :break condense
+-- :break inferisign
+-- :break dedmatrix
+-- :break pdividePos
+-- :break splitSign
+-- :break splitTrichotomy
+-- :break caseSplit
+-- :break delConst
+-- :break matrix
+-- :break basicQelim
+
+-- qelim [$form| ∃ x. x^2 = 0 |]
